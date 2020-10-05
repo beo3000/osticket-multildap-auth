@@ -121,7 +121,7 @@ class LdapMultiAuthPluginConfig extends PluginConfig {
 				'label' => $__('Short Domain') ,
 				'configuration' => array(
 					'size' => 40,
-					'length' => 60
+					'length' => 120
 				) ,
 				'hint' => $__('Use your netbios domain seperated by "," FOO;DOO') ,
 			)) ,
@@ -162,7 +162,7 @@ class LdapMultiAuthPluginConfig extends PluginConfig {
 				'hint' => $__("Password associated with the 'Seach User' account") ,
 				'configuration' => array(
 					'size' => 40,
-					'length' => 60
+					'length' => 120
 				) ,
 			)) ,
 			'search_base' => new TextboxField(array(
@@ -171,7 +171,7 @@ class LdapMultiAuthPluginConfig extends PluginConfig {
 				'default' => '(&(objectCategory=person)(objectClass=user)(|(sAMAccountName={q}*)(firstName={q}*)(lastName={q}*)(displayName={q}*)))',
 				'configuration' => array(
 					'size' => 70,
-					'length' => 120
+					'length' => 240
 				) ,
 			)) ,
 			'auth' => new SectionBreakField(array(
@@ -218,7 +218,7 @@ class LdapMultiAuthPluginConfig extends PluginConfig {
 				'default' => 'Domain Admins',
 				'configuration' => array(
 					'size' => 40,
-					'length' => 60
+					'length' => 120
 				) ,
 				'hint' => $__('Staff registration group membership (use semicolons for multiple groups)') ,
 			)) ,
@@ -308,7 +308,7 @@ class LdapMultiAuthPluginConfig extends PluginConfig {
 				'default' => '(&(sAMAccountType=805306368)(mail=*))',
 				'configuration' => array(
 					'size' => 70,
-					'length' => 150
+					'length' => 300
 				) ,
 			)) ,
 
